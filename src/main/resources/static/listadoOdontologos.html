@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta  nombre ="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="shortcut icon" href="#">
+    <link href="./styles.css" rel="stylesheet">
+    <script src="js/get_odontologos.js"></script>
+</head>
+<body>
+<header>
+    <nav id="nav-superior">
+        <div class="logotipo">
+            <div class="img"><img src="img/logo.png" width="70px"></div>
+            <h1>Clínica Odontológica</h1>
+        </div>
+        <div class="Opciones">
+            <ul type="none" class="pages">
+                <li><a href="pantallaPrincipal.html">Inicio</a></li>
+                <li><a href="altaOdontologo.html">Registrar Odontólogo</a></li>
+                <li><a href="listadoOdontologos.html">Listado de Odontólogos</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<section class ="seccion-tabla">
+    <div class="listado">
+        <h2>Listado de Odontólogos</h2>
+        <table id="tabla">
+            <thead>
+                <tr id="opciones">
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                </tr>
+            </thead>
+            <tbody id="filas"></tbody>
+        </table>
+    </div>
+</section>
+<footer>
+    Todos los derechos reservados a BACKEND I
+</footer>
+</body>
+</html>

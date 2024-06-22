@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="shortcut icon" href="#">
+    <link href="./styles.css" rel="stylesheet">
+    <script src="js/post_odontologo.js"></script>
+</head>
+<body>
+<header>
+    <nav id="nav-superior">
+        <div class="logotipo">
+            <div class="img"><img src="img/logo.png" width="70px"></div>
+            <h1>Clínica Odontológica</h1>
+        </div>
+        <div class="Opciones">
+            <ul type="none" class="pages">
+                <li><a href="pantallaPrincipal.html">Inicio</a></li>
+                <li><a href="altaOdontologo.html">Registrar Odontólogo</a></li>
+                <li><a href="listadoOdontologos.html">Listado de Odontólogos</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<section class="formulario-alta">
+        <div id="formulario">
+        <form id="form"action="#" onsubmit="return false">
+            <h2>Registrar un odontólogo </h2>
+            <div class="input-label">
+                <label for="nombre">Nombre*</label>
+                <input class="text" type="text" id="nombre" name="nombre" placeholder="Ingrese nombre">
+            </div>
+            <div class="input-label">
+                <label for="apellido">Apellido*</label>
+                <input class="text" type="text" id="apellido" name="apellido" placeholder="Ingrese apellido">
+            </div>
+            <div class="input-label">
+                <label for="matricula">Matrícula*</label>
+                <input class="text" type="text" id="matricula" name="matricula" placeholder=" Ingrese matrícula">
+            </div>
+            <div class="botones">
+                <input class="boton-alta" type="submit" value="Registrar" name="Registrar" id="Registrar">
+            </div>
+            <span>*Campos obligatorios</span>
+            <div class="alerta"></div>
+        </form>
+    </div>
+</section>
+
+<footer>
+    Todos los derechos reservados a BACKEND I
+</footer>
+
+</body>
+</html>

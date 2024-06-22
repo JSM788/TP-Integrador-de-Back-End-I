@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    background-color: #F2F2F2
+}
+
+/**SECCIONES**/
+.formulario-alta,
+.seccion-tabla,
+.seccion-central {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/**HEADER**/
+#nav-superior {
+    background-color: #3498db;
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding: 0.4rem;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-superior .logotipo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logotipo .img{
+    margin: 0rem 1.5rem 0rem 1.5rem;
+}
+
+.opciones {
+    font-size: 0.8rem;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.pages li {
+    font-size: 1rem;
+    display: inline;
+    margin: 2rem;
+}
+
+.pages a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.pages a:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.pages a:hover {
+    color: #03a9f4;
+    font-weight: 400;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3rem;
+
+}
+
+/**BOTONES**/
+
+.boton {
+    background-color: #FFFFFF;
+    padding: 1rem 2rem;
+    border: none;
+    color: #2E2E2E;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    display: block;
+    margin: auto;
+    position: relative;
+    bottom: 5rem;
+    border-radius: 0.5rem;
+}
+
+.boton:hover {
+    background-color: #b0bec5;
+    box-shadow: 0.2rem 0.2rem 0.3rem #2e2e2e;
+}
+
+.boton a {
+    text-decoration: none;
+    color: #2E2E2E;
+}
+
+/**FOOTER**/
+footer {
+    width: 100%;
+    background-color: #37474f;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    padding: 1rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+/**FORM**/
+#formulario {
+    background-color: #F5F5F5;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin: 5rem auto;
+    width: 40rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+form .text {
+    background-color: #E0E0E0;
+    margin: 0.5rem;
+    border: none;
+    color: #333333;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+form h2 {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    color: #333333;
+    padding: 0.5rem;
+}
+
+form label {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    color: #333333;
+}
+
+form span {
+    text-align: left;
+    font-size: 0.8rem;
+    color: #333333;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.boton-alta {
+    background-color: #03A9F4;
+    padding: 0.5rem 1rem;
+    border: none;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-alta:hover {
+    background-color: #039BE5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/**LISTADO ODONTOLOGOS TABLA**/
+
+.listado {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.5rem;
+    background-color: #FFFFFF; /* Fondo blanco */
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#tabla {
+    border: 2px solid #CCCCCC; /* Borde gris claro */
+    border-collapse: collapse;
+    width: 45rem; /* Ancho fijo */
+    text-align: center;
+    color: #2E2E2E; /* Color de texto gris oscuro */
+    margin: 1rem auto; /* Centrado horizontal y margen */
+    background-color: #F5F5F5; /* Fondo gris claro */
+}
+
+tr, tbody {
+    padding: 0.5rem;
+}
+
+td, th {
+    padding: 0.5rem;
+    border: 2px solid #CCCCCC; /* Borde gris claro */
+    border-collapse: collapse;
+}
+
+#tabla th {
+    background-color: #EEEEEE; /* Color de fondo de las cabeceras */
+}
+
+#tabla tr:nth-child(even) {
+    background-color: #FAFAFA; /* Color de fondo de las filas pares */
+}
+
+.imagen-contenedor {
+    border: 2px solid #CCCCCC;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 300px;
+}
+
+.fondo {
+    width: 30rem;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0.5rem;
+}
+
+.boton {
+    margin-top: 10px;
+}
